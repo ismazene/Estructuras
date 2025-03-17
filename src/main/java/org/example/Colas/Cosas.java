@@ -31,7 +31,5 @@ public class Cosas {
 
         LinkedList<Integer> lista = new LinkedList<>();
         lista.add(2,14);
-
     }
-
 }
