@@ -1,5 +1,4 @@
 package org.example.equals_hashcode;
-
 import java.util.Objects;
 
 public class Equipos {
@@ -17,16 +16,16 @@ public class Equipos {
         return "Equipos{" + "nombre='" + nombre + '\'' + ", numero='" + numero + '\'' + '}';
     }
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (o == null || getClass() != o.getClass()) return false;
-//        Equipos equipos = (Equipos) o;
-//        return Objects.equals(nombre, equipos.nombre) && Objects.equals(numero, equipos.numero);
-//    }
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Equipos equipos = (Equipos) o;
+        return Objects.equals(nombre, equipos.nombre);
+    }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nombre, numero);
+        return Objects.hash(nombre);
     }
 }
 

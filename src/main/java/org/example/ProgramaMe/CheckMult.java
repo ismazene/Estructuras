@@ -21,6 +21,7 @@ public class CheckMult {
         if (n < 10) {
             return n + "" + ceros;
         }
+
         int p = 1;
         int i = n;
 
