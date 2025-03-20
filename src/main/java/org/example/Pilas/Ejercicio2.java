@@ -1,28 +1,26 @@
 package org.example.Pilas;
 
-
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.Scanner;
+import java.util.Stack;
 
 public class Ejercicio2 {
     public static void main(String[] args) {
 
-        Queue<String> cola = new LinkedList<>();
+        Scanner ent = new Scanner(System.in);
 
-        cola.offer("Imprimir documento 1");
-        cola.offer("Imprimir documento 2");
-        cola.offer("Imprimir documento 3");
-        cola.offer("Imprimir documento 4");
-        cola.offer("Imprimir documento 5");
+        Stack<Integer> pila = new Stack<>();
 
-        System.out.println("Estado inicial de la cola de impresión: " + cola);
+        System.out.print("Introduce el primer número: ");
+        pila.push(ent.nextInt());
+        System.out.print("Introduce el segundo número: ");
+        pila.push(ent.nextInt());
+        System.out.print("Introduce el tercer número: ");
+        pila.push(ent.nextInt());
 
-        while(!cola.isEmpty()) {
-            System.out.println("Procesando: " + cola.poll());
-            System.out.println("Estado de la cola después de procesar el tranajo: " + cola);
+        System.out.println("Números en order inverso:");
+        while(!pila.isEmpty()) {
+            System.out.println(pila.pop());
         }
-
-        System.out.println("Acabé");
 
     }
 

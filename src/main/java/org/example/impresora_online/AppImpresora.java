@@ -44,7 +44,7 @@ public class AppImpresora {
     }
     public static void imprimirTodo(){
         while (!colaPeticiones.isEmpty()){
-            imprimirDocumento();    
+            imprimirDocumento();
         }
         System.out.println("La cola ha terminado");
     }
