@@ -3,7 +3,6 @@ package org.example.equals_hashcode;
 public class Persona {
     private int edad;
 
-
     public Persona(int edad){
         this.edad=edad;
     }
@@ -13,9 +12,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" +
-                "edad=" + edad +
-                '}';
+        return "Persona{" + "edad=" + edad + '}';
     }
 }
 

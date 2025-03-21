@@ -1,4 +1,4 @@
-package org.example.Pilas;
+package org.example.Colas;
 
 import java.util.LinkedList;
 import java.util.Queue;

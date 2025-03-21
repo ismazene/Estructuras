@@ -4,14 +4,13 @@ import java.util.Stack;
 
 public class Ejercicio3 {
     public static void main(String[] args) {
-        // Simulación de entrada de diferentes casos de prueba
         String[] casosDePrueba = {
-                "({[]})()",  // Esperado: YES
-                ":)",         // Esperado: NO
-                "{[()()]}",   // Esperado: YES
-                "({[})",      // Esperado: NO
-                "{[",         // Esperado: NO
-                "()",         // Esperado: YES
+                "({[]})()",
+                ":)",
+                "{[()()]}",
+                "({[})",
+                "{[",
+                "()",
         };
 
         for (String prueba : casosDePrueba) {

@@ -2,7 +2,6 @@ package org.example.equals_hashcode;
 import java.util.Objects;
 
 public class Equipos {
-
     private String nombre;
     private String numero;
 
