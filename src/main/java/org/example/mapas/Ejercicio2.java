@@ -13,16 +13,14 @@ public class Ejercicio2 {
         System.out.println("Escribe una palabra...");
         String palabra = teclado.nextLine();
 
-        Map<Character,Integer> mapaLetras = new HashMap<>();
+        Map<Character, Integer> mapaLetras = new HashMap<>();
 
-        for (Character letra : palabra.toCharArray()){
-            mapaLetras.put(letra,mapaLetras.getOrDefault(palabra,0)+1);
-            // mapaLetras.put(palabra,mapaLetras.get(palabra)+1);
+        for (Character letra : palabra.toCharArray()) {
+            mapaLetras.put(letra, mapaLetras.getOrDefault(letra, 0) + 1);
         }
 
-        for (Map.Entry<String,Integer> palabra : mapaLetras.entrySet()){
-            System.out.println(palabra.getKey() + ":" + palabra.getValue());
+        for (Map.Entry<Character, Integer> entrada : mapaLetras.entrySet()) {
+            System.out.println(entrada.getKey() + ": " + entrada.getValue());
         }
-
     }
 }
