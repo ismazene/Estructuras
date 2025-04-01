@@ -32,7 +32,7 @@ public class Main {
 
     }
 
-    //Recibe una pila de Informes previamente creado
+    //Recibe una pila de Informes previamente creádo
     private static void agregarInforme(Stack<Informe> pila, int codigo, String tipo_informe, String descripcion) {
         if (tipo_informe.equalsIgnoreCase("ADMINISTRATIVO") || tipo_informe.equalsIgnoreCase("EMPRESARIAL") || tipo_informe.equalsIgnoreCase("PERSONAL")) {
             pila.push(new Informe(codigo, tipo_informe, descripcion));

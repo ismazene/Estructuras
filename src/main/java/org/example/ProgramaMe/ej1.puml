@@ -1,0 +1,52 @@
+@startuml
+class Libro {
+  - nombre: String
+  - tipo: String
+  - editorial: String
+  - año: int
+  + getNombre(): String
+  + getTipo(): String
+  + getEditorial(): String
+  + getAño(): int
+}
+
+class Autor {
+  - nombre: String
+  - nacionalidad: String
+  - fechaNacimiento: Date
+  + getNombre(): String
+  + getNacionalidad(): String
+  + getFechaNacimiento(): Date
+}
+
+class Copia {
+  - identificador: int
+  - estado: String
+  + getIdentificador(): int
+  + getEstado(): String
+}
+
+class Lector {
+  - numeroSocio: int
+  - nombre: String
+  - telefono: String
+  - direccion: String
+  + getNumeroSocio(): int
+  + getNombre(): String
+  + getTelefono(): String
+  + getDireccion(): String
+  + getNumeroLibrosPrestados(): int
+}
+
+class Prestamo {
+  - fechaInicio: Date
+  - fechaDevolucion: Date
+  + getFechaInicio(): Date
+  + getFechaDevolucion(): Date
+}
+
+Libro "1" -- "*" Copia : tiene
+Libro "1" -- "*" Autor : escrito por
+Lector "1" -- "0..3" Prestamo : realiza
+Prestamo "1" -- "1" Copia : incluye
+@enduml
